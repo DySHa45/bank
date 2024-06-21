@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Запобігає прокрутці тіла сторінки */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px; /* Максимальна ширина контейнера */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    max-height: 60vh; /* Обмеження висоти таблиці */
+    overflow-y: auto; /* Додає прокрутку по вертикалі */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f9;
+    position: sticky; /* Закріплює заголовки таблиці при прокручуванні */
+    top: 0;
+}
